@@ -1,7 +1,7 @@
 {
   "name": "react-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple React, JSX, CSS module and Hot Module Replacement setup",
   "main": "index.js",
   "dependencies": {
     "react": "^15.6.1",
@@ -40,6 +40,6 @@
     "test": "yarn run test",
     "dev": "./node_modules/.bin/webpack-dev-server -d --config webpack/webpack.dev.config.js --hot --progress --colors --inline"
   },
-  "author": "",
+  "author": "Adam Bull",
   "license": "ISC"
 }
