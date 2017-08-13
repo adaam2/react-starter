@@ -5,8 +5,9 @@ module.exports = {
     entry:  [
         'react-hot-loader/patch',
         'webpack/hot/only-dev-server',
-        './client/index.js'
+        './index.js'
     ],
+    context: path.join(__dirname, 'client'),
     output: {
         filename: 'bundle.js',
         path: path.resolve(process.cwd(), 'build')

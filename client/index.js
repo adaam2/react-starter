@@ -1,23 +1,21 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 import { AppContainer } from 'react-hot-loader';
-import App from './app.jsx';
+
+import store from './store';
+import routes from './routes';
 
 render(
-  <AppContainer>
-    <App/>
-  </AppContainer>,
+  <Provider store={store}>{routes}</Provider>,
   document.querySelector("#app")
 );
 
 if (module && module.hot) {
-  module.hot.accept('./app', () => {
-    const NextApp = require('./app').default;
-    ReactDOM.render(
-      <AppContainer>
-        <NextApp/>
-      </AppContainer>,
-      document.getElementById('root')
+  module.hot.accept('./containers/app', () => {
+    render(
+      <Provider store={store}>{routes}</Provider>,
+      document.querySelector('#app')
     );
   });
 }
