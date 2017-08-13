@@ -18,3 +18,9 @@ Run the project:
 ```
 npm run dev
 ```
+
+View in browser:
+
+```
+http://localhost:8080
+```
