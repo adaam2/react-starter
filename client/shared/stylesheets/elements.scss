@@ -1,0 +1,29 @@
+$font: 'Encode Sans', sans-serif;
+
+body {
+  font-family: $font;
+  line-height: 1.2;
+  font-size: 18px;
+  padding: 20px;
+}
+
+$context-font: (
+  header: 1, /* 100% */
+  article: 0.67, /* 67%  */
+  footer: 0.5, /* 50%  */
+  aside: 0.33 /* 33% */
+);
+
+@each $element, $value in $context-font {
+  #{$element} {
+    $decreaseBy: 6px;
+    $h1: ($value * 40px);
+    @for $i from 1 through 6 {
+      h#{$i} {
+        margin-top: (10px - $i);
+        margin-bottom: (10px - $i);
+        font-size: ($h1+$decreaseBy) - $i * $decreaseBy;
+      }
+    }
+  }
+}

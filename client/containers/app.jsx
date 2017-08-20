@@ -19,12 +19,14 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className={styles.container}>
+      <header className={styles.container}>
         <h1>It Works!</h1>
         <p>
-          OMG I'VE FINALLY CONFIGURED WEBPACK
+          Webpack is shit.
         </p>
-      </div>
+
+        <h2>Second heading</h2>
+      </header>
     )
   }
 }
