@@ -39,3 +39,12 @@ http://localhost:8080
 - Redux action logging with `redux-logger`
 - Hot module replacement / live reloading using `react-hot-loader` v3
 - Postcss with `autoprefixer`
+
+
+# Branches
+
+There is also a Rails 5 version with Rack::Proxy setup so that the Rails application is namespaced to `/api`. 
+
+Run the stack by running: `foreman start -f Procfile.dev`
+
+You can find the code at https://github.com/adaam2/react-starter/tree/with-rails
