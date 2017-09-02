@@ -20,3 +20,5 @@ dump.rdb
 log/dump.rdb
 
 .vscode
+
+package-lock.json

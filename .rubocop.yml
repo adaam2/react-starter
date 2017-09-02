@@ -1,0 +1,74 @@
+Style/Documentation:
+  Enabled: false
+
+LineLength:
+   Max: 120
+
+Rails:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - "bin/**/*"
+    - "db/**/*"
+    - "node_modules/**/*"
+    
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/Lambda:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: "double_quotes"
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Removing Blocks Cop for RSpec so we can do expect { ... }
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*'
+
+Style/SymbolArray:
+  Enabled: false
+
+# DSLs are allowed long blocks.
+Metrics/BlockLength:
+  Enabled: false
+
+Rails/HttpPositionalArguments:
+  Enabled: false
+
+Style/TrailingCommaInLiteral:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+# Can remove when bbatsov/rubocop#4189 is released
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+# Let us line up case/if statements how we want
+Lint/EndAlignment:
+    Enabled: false
+
+Style/CaseIndentation:
+  Enabled: false
+
+# This is buggy https://github.com/bbatsov/rubocop/issues/4321
+Style/RedundantSelf:
+  Enabled: false
+
+Security/YAMLLoad:
+  Enabled: false
+
+Style/AlignHash:
+  EnforcedLastArgumentHashStyle: ignore_implicit
