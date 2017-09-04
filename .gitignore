@@ -13,7 +13,6 @@ log/*
 
 .DS_Store
 erd.pdf
-.env
 *.dump
 pubnub.log
 dump.rdb
