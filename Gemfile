@@ -45,6 +45,7 @@ gem 'redis', '~> 3.0'
 
 group :test do
   gem 'rspec-rails', '~> 3.6'
+  gem 'simplecov', require: false
 end
 
 group :development, :test do
