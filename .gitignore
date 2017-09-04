@@ -7,16 +7,19 @@ yarn-error.log
 log/*
 /tmp
 
+coverage
+
 .idea/*
 .idea/*.xml
 .idea
 
 .DS_Store
 erd.pdf
-.env
 *.dump
 pubnub.log
 dump.rdb
 log/dump.rdb
 
 .vscode
+
+package-lock.json
